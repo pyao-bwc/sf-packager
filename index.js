@@ -75,7 +75,7 @@ program
             if (fileName && fileName.substring(0,3) === 'src') {
 
                 //ignore changes to the package.xml file
-                if(fileName === 'src/package.xml') {
+                if(fileName.contains('package.xml')) {
                     return;
                 }
 
